@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f1ec">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Mutual Consent Check-in</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="dot" aria-hidden="true"></span> Consent Check-in</div>
+    <button class="linkish" id="infoBtn" type="button" aria-haspopup="dialog">About &amp; help</button>
+  </header>
+
+  <main id="app" aria-live="polite"></main>
+
+  <!-- Always-visible controls while a session is open -->
+  <nav id="controls" class="controls hidden" aria-label="Session controls">
+    <button id="pauseBtn" class="btn btn-pause" type="button">Pause / check in</button>
+    <button id="stopBtn" class="btn btn-stop" type="button">Stop / I withdraw consent</button>
+  </nav>
+
+  <dialog id="info">
+    <div class="dialog-body">
+      <h2>Please read</h2>
+      <ul class="disclaimers">
+        <li><strong>Consent can be withdrawn at any moment</strong>, by words or by actions, regardless of what this app shows. If someone says stop, hesitates, or goes quiet, stop.</li>
+        <li>This app is a <strong>communication tool only</strong>. It is <strong>not legal proof of consent</strong> and doesn't replace talking to each other.</li>
+        <li>A person who is <strong>intoxicated or impaired, asleep or unconscious, pressured or coerced, or under 18</strong> cannot consent.</li>
+        <li>Consent to one thing isn't consent to everything, and consent now isn't consent later. Sessions expire and never carry over.</li>
+        <li>Privacy: use nicknames only. Names, choices and notes stay in memory and are wiped when the session ends. Only event timestamps are stored, and you can delete them.</li>
+      </ul>
+      <h3>Support</h3>
+      <p>RAINN National Sexual Assault Hotline (US, 24/7): <a href="tel:18006564673">1-800-656-4673</a> · <a href="https://rainn.org" target="_blank" rel="noopener noreferrer">rainn.org</a></p>
+      <p>In immediate danger, call <a href="tel:911">911</a> or your local emergency number.</p>
+      <form method="dialog"><button class="btn btn-primary" type="submit">Close</button></form>
+    </div>
+  </dialog>
+
+  <script src="/app.js"></script>
+</body>
+</html>

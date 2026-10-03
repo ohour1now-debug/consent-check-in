@@ -1,0 +1,24 @@
+{
+  "name": "consent-checkin",
+  "version": "1.0.0",
+  "description": "Prototype: two adults confirm mutual consent, with instant withdraw",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/e2e.js",
+    "screenshots": "node test/screenshots.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "puppeteer-core": "^25.12.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "qrcode": "^1.5.4",
+    "sql.js": "^1.14.2",
+    "ws": "^8.22.0"
+  },
+  "private": true
+}
